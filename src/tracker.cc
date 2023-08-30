@@ -19,7 +19,7 @@ TrackerProject::~TrackerProject()
 
 int8_t TrackerProject::init()
 {
-    cv::VideoCapture cap(0);
+    cv::VideoCapture cap("../video/video1.mp4");
 
     if (!cap.isOpened())
     {
